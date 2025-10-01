@@ -82,7 +82,7 @@ import aregister from '../assets/agr/register.png'
 const projects = [
     {
         title: 'E-commerce',
-        description: 'Projet de gestion des composants PC permettant de suivre et organiser le matériel via une interface simple développée avec Laravel 12, HTML, CSS et JavaScript.',
+        description: 'Projet de gestion des composants PC permettant de suivre et organiser le matériel via une interface simple développée avec Laravel 12, HTML, CSS et JavaScript. (Pas encore responsive)',
         images: [dashboardImg, categoriesImg, homeImg, aboutImg, panierImg, profileImg, productsImg, usersImg],
         techs: ['HTML', 'CSS', 'JavaScript', 'Laravel', 'Mysql', 'ChartJs']
     },
