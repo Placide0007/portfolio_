@@ -1,0 +1,25 @@
+<template>
+    <!-- hero section -->
+    <section id="hero" class="flex bg-gradient-to-l from-slate-900 to-slate-950 justify-center items-center h-screen">
+        <div class="description-container text-center max-w-[1100px] flex gap-7 justify-center items-center flex-col">
+            <p class="text-5xl font-extrabold leading-snug">
+                Bonjour, Je suis <span>Lazare Placide ANDRIATAHINA</span>
+            </p>
+            <div class="md:max-w-[570px] max-w-[400px]">
+                <p>
+                    Développeur passionné par le développement web, j’aime concevoir des interfaces modernes,
+                    fonctionnelles
+                    et bien structurées. Je porte une attention particulière à la qualité du code et à l’expérience
+                    utilisateur.
+                </p>
+
+            </div>
+            <div>
+                <a class="border-white hover:bg-white hover:text-slate-950 border p-3 rounded" href="">
+                    Telecharger mon CV
+                    <i class="fa fa-download"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+</template>

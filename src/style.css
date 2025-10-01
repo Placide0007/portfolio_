@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+@import 'font-awesome/css/font-awesome.min.css';
+
+* {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    font-family: Poppins;
+    @apply bg-slate-950 text-white;
+  }
+  ul.active{
+    @apply bg-gray-200 w-full text-center text-slate-800;
+  }
+}
+
