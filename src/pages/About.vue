@@ -6,16 +6,16 @@
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div class="shadow-gray-100 shadow-xs p-5 rounded  cursor-pointer bg-slate-800"
+            <div class="border-slate-900 p-5 rounded  cursor-pointer bg-slate-800"
                 data-aos="fade-up">
                 <p class="text-xl">
                     Je suis un développeur passionné et attentif aux détails, originaire de
-                    Madagascar. J'aime transformer les idées en logiciels fonctionnels et
+                    Madagascar. J'aime transformer les idées en projets fonctionnels et
                     élégants.
                 </p>
             </div>
 
-            <div class="shadow-gray-100 shadow-xs p-5 rounded  cursor-pointer bg-slate-800"
+            <div class="border-slate-900 p-5 rounded  cursor-pointer bg-slate-800"
                 data-aos="fade-up" data-aos-delay="100">
                 <p class="text-xl">
                     Titulaire d'une Licence en Informatique à l’Université de Toamasina, je
@@ -24,7 +24,7 @@
                 </p>
             </div>
 
-            <div class="shadow-gray-100 shadow-xs p-5 rounded  cursor-pointer bg-slate-800"
+            <div class="border-slate-900 p-5 rounded  cursor-pointer bg-slate-800"
                 data-aos="fade-up" data-aos-delay="200">
                 <p class="text-xl">
                     Je conçois des interfaces modernes et responsives avec VueJS, React.js,
@@ -33,7 +33,7 @@
                 </p>
             </div>
 
-            <div class="shadow-gray-100 shadow-xs p-5 rounded  cursor-pointer bg-slate-800"
+            <div class="border-slate-900 p-5 rounded  cursor-pointer bg-slate-800"
                 data-aos="fade-up" data-aos-delay="300">
                 <p class="text-xl">
                     Toujours à l’écoute des dernières tendances technologiques, je

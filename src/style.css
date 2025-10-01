@@ -10,7 +10,6 @@
     font-family: Poppins;
     @apply bg-slate-950 text-white;
   }
-
   .active{
     @apply text-violet-500
   }

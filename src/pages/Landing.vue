@@ -1,6 +1,6 @@
 <template>
     <!-- hero section -->
-    <section id="hero" class="flex bg-gradient-to-t from-violet-500/30  to-slate-850 justify-center items-center h-screen">
+    <section id="hero" class="flex bg-gradient-to-t from-green-900/20  to-slate-850 justify-center items-center h-screen">
         <div class="description-container text-center max-w-[1100px] flex gap-7 justify-center items-center flex-col">
             <p class="text-5xl font-extrabold leading-snug">
                 Bonjour, Je suis Lazare Placide ANDRIATAHINA
@@ -14,7 +14,7 @@
                 </p>
             </div>
             <div>
-                <a class="border-white hover:bg-white hover:text-slate-950 border p-3 rounded" href="">
+                <a class="border-white duration-300 hover:bg-white hover:text-slate-950 border p-3 rounded" href="../assets/cv.pdf">
                     Telecharger mon CV
                     <i class="fa fa-download mx-3"></i>
                 </a>

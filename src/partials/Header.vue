@@ -1,6 +1,7 @@
 <template>
     <header class="flex justify-between items-center px-5 py-3 z-40 shadow-xs shadow-slate-800 sticky top-0 bg-slate-950 ">
-        <p class="font-semibold text-xl text-violet-400">Portfolio</p>
+
+        <a class="font-semibold hover:-translate-y-1 duration-300  text-xl text-violet-400" href="#hero">Portfolio</a>
 
         <nav class="hidden md:flex gap-10">
             <router-link v-for="item in menuItems" :key="item.id" :to="`/#${item.id}`"
@@ -10,7 +11,7 @@
         </nav>
 
         <div class="flex items-center gap-4">
-            <a class="text-3xl hidden md:block" href="https://github.com/Placide0007">
+            <a class="text-3xl hidden md:block hover:-translate-y-1 duration-300" href="https://github.com/Placide0007">
                 <i class="fa fa-github"></i>
             </a>
             <button @click="toggleMenu" class="md:hidden cursor-pointer text-3xl focus:outline-none text-white">
@@ -25,7 +26,7 @@
             <a href="#about" class="text-white text-lg" @click="toggleMenu">A propos</a>
             <a href="#my_projects" class="text-white text-lg" @click="toggleMenu">Projets</a>
             <a href="#footer" class="text-white text-lg" @click="toggleMenu">Contact</a>
-            <a href="https://github.com/Placide0007" class="text-3xl mt-4" @click="toggleMenu">
+            <a href="https://github.com/Placide0007" class="text-3xl mt-4 hover:-translate-y-1 duration-300" @click="toggleMenu">
                 <i class="fa fa-github"></i>
             </a>
         </nav>

@@ -2,13 +2,13 @@
     <!-- section projet  -->
 
     <section id="my_projects" class="p-10">
-        <div id="jumbotrons-description-container" class="flex gap-3 flex-col py-10">
+        <div class="flex gap-3 flex-col py-10">
             <p class="text-center text-3xl">Mes projets</p>
         </div>
 
         <div id="projects" class="grid grid-cols-1 md:grid-cols-2 gap-5">
 
-            <div class="card shadow-gray-100 shadow-xs p-3 rounded" v-for="(project, index) in projects" :key="index">
+            <div class="card border-slate-900 border p-3 rounded" v-for="(project, index) in projects" :key="index">
                 <div class="card-header py-3">
                     <p class="font-semibold text-xl">{{ project.title }}</p>
                     <p>{{ project.description }}</p>
@@ -87,6 +87,18 @@ const projects = [
         techs: ['HTML', 'CSS', 'JavaScript', 'Laravel', 'Mysql', 'ChartJs']
     },
     {
+        title: 'PortFolio',
+        description: 'Portfolio personnel développé avec Vue.js et Tailwind CSS pour présenter mes projets, compétences et expériences de manière professionnelle et responsive',
+        images: [landing, competence, projet],
+        techs: ['Vue.js', 'tailwindcss', 'splidejs']
+    },
+    {
+        title: 'Agrikult',
+        description: 'Développeur Front-End d’une application collaborative de partage de ressources culturelles, en collaboration avec deux coéquipiers. (Projet en cours de développement) )',
+        images: [accueil, ajumbotron, ajumbotron2, alogin, aregister],
+        techs: ['ReactJs', 'TailwindCss', 'SpringBoot', 'Mysql']
+    },
+    {
         title: 'Bibliothèque en ligne',
         description: 'Application de gestion de bibliothèque permettant aux utilisateurs d\'emprunter et réserver des livres. Interface simple développée avec Vue.js, HTML et CSS.',
         images: [bbooks, bcategories, bemprunts, bhome, blogin, bnew_book, breservation, busers],
@@ -100,19 +112,7 @@ const projects = [
         techs: ['HTML', 'CSS', 'Vue.js', 'Laravel', 'Mysql', 'bootstrap5']
     },
 
-    {
-        title: 'Agrikult',
-        description: 'Développeur Front-End d’une application collaborative de partage de ressources culturelles, en collaboration avec deux coéquipiers. (Projet en cours de développement))',
-        images: [accueil, ajumbotron, ajumbotron2, alogin, aregister],
-        techs: ['ReactJs', 'TailwindCss', 'SpringBoot', 'Mysql']
-    },
 
-    {
-        title: 'PortFolio',
-        description: 'Portfolio personnel développé avec Vue.js et Tailwind CSS pour présenter mes projets, compétences et expériences de manière professionnelle et responsive',
-        images: [landing, competence, projet],
-        techs: ['Vue.js', 'tailwindcss']
-    },
 ]
 
 const splides = []

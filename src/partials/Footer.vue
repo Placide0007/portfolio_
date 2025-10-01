@@ -9,7 +9,7 @@
         <a  href="https://github.com/Placide0007">
             <img src="../assets/gmail.svg" alt="" class="w-[30px]">
         </a>
-        <a class="absolute right-[20px] -top-5 cursor-pointer bg-slate-800 rounded px-5 py-3" href="#top">
+        <a class="absolute right-[20px] -top-6 cursor-pointer bg-slate-800 rounded px-5 py-3" href="#top">
             <i class="fa fa-arrow-up"></i>
         </a>
     </footer>
