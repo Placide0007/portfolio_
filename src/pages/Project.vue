@@ -29,7 +29,7 @@
 
                 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 py-5">
                     <div v-for="(tech, tIdx) in project.techs" :key="tIdx"
-                        class="flex bg-slate-700 justify-center items-center border-xs rounded text-sm px-4 py-2 text-center">
+                        class="flex bg-slate-800 justify-center items-center border-xs rounded text-xs  py-1 text-center">
                         {{ tech }}
                     </div>
                 </div>

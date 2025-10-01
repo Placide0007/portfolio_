@@ -1,11 +1,11 @@
 <template>
-  <main class="flex min-h-screen flex-col">
+  <main id="top" class="flex min-h-screen flex-col container mx-auto">
     <Header />
     <section class="content grow">
-      <Landing/>
-      <Competence/>
-      <About/>
-      <Project/>
+      <Landing />
+      <Competence />
+      <About />
+      <Project />
     </section>
     <Footer />
   </main>
