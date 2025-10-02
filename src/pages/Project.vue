@@ -89,7 +89,7 @@
             title: 'PortFolio',
             description: 'Portfolio personnel développé avec Vue.js et Tailwind CSS pour présenter mes projets, compétences et expériences de manière professionnelle et responsive',
             images: [landing, competence, projet],
-            techs: ['Vue.js', 'tailwindcss', 'splidejs']
+            techs: ['Vue.js', 'tailwindcss', 'splidejs','AnimateCss','AOS']
         },
         {
             title: 'Agrikult',
