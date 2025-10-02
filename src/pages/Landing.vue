@@ -16,7 +16,7 @@
             </div>
             <div>
                 <a class="border-white duration-300 hover:bg-white hover:text-slate-950 border p-3 rounded inline-flex items-center animate__animated animate__bounce"
-                    href="../../public/cv.pdf">
+                    href="/cv.pdf" download="mon_cv">
                     Télécharger mon CV
                     <i class="fa fa-download mx-3"></i>
                 </a>
