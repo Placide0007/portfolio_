@@ -12,5 +12,9 @@
         <a class="absolute right-[20px] -top-6 cursor-pointer bg-slate-800 rounded px-5 py-3" href="#top">
             <i class="fa fa-arrow-up"></i>
         </a>
+        <p class="text-sm" >
+            <i class="fa fa-phone" ></i>
+            +261349141094
+        </p>
     </footer>
 </template>
