@@ -107,7 +107,7 @@
                     </button>
                     <button
                         class="w-[50px] hover:-translate-y-2 duration-300 cursor-pointer flex justify-center items-center flex-col gap-1">
-                        <img class="w-[50px]" src="../assets/insomnia.svg" alt="insomnia" />
+                        <img class="w-[50px]" src="../assets/insomnias.svg" alt="insomnia" />
                         <p>Insomnia</p>
                     </button>
                     <button
