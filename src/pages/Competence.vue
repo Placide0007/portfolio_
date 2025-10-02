@@ -105,6 +105,16 @@
                         <img class="w-[50px]" src="../assets/github.svg" alt="GitHub" />
                         <p>GitHub</p>
                     </button>
+                    <button
+                        class="w-[50px] hover:-translate-y-2 duration-300 cursor-pointer flex justify-center items-center flex-col gap-1">
+                        <img class="w-[50px]" src="../assets/insomnia.svg" alt="insomnia" />
+                        <p>Insomnia</p>
+                    </button>
+                    <button
+                        class="w-[50px] hover:-translate-y-2 duration-300 cursor-pointer flex justify-center items-center flex-col gap-1">
+                        <img class="w-[50px]" src="../assets/paradigm.png" alt="paradigm" />
+                        <p>Visual Paradigm</p>
+                    </button>
                 </div>
             </div>
         </div>
