@@ -7,7 +7,7 @@
 
         <!-- mes competences -->
         <div id="skills-container" class="grid md:grid-cols-2 grid-cols-1 gap-6 md:px-10 p-3">
-            <!-- Langages de programmation -->
+            
             <div id="programing-langage" class="border-slate-800 border rounded-lg p-5" data-aos="fade-up">
                 <p class="p-3 text-lg font-medium flex items-center gap-2">
                     <i class="fa fa-code"></i>
@@ -122,15 +122,15 @@
 </template>
 
 <script setup>
-import { onMounted } from 'vue'
-import AOS from 'aos'
-import 'aos/dist/aos.css'
+    import { onMounted } from 'vue'
+    import AOS from 'aos'
+    import 'aos/dist/aos.css'
 
-onMounted(() => {
-    AOS.init({
-        duration: 800,
-        once: true,
+    onMounted(() => {
+        AOS.init({
+            duration: 800,
+            once: true,
+        })
     })
-})
 </script>
 

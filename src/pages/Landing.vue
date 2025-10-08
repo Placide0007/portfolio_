@@ -1,7 +1,7 @@
 <template>
     <!-- hero section -->
     <section id="hero"
-        class="flex bg-gradient-to-t from-green-900/20  to-slate-850 justify-center items-center h-screen">
+        class="flex bg-gradient-to-t from-green-900/2z0  to-slate-850 justify-center items-center h-screen">
         <div class="description-container text-center max-w-[1100px] flex gap-7 justify-center items-center flex-col">
             <p class="text-5xl font-extrabold leading-snug">
                 Bonjour, Je suis Lazare Placide ANDRIATAHINA

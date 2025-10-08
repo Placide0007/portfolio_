@@ -1,5 +1,5 @@
 <template>
-    <header class="flex justify-between items-center px-5 py-3 z-40 shadow-xs shadow-slate-800 sticky top-0 bg-slate-950 ">
+    <header class="flex backdrop-blur-2xl  justify-between items-center px-5 py-3 z-40 shadow-xs shadow-slate-800 sticky top-0 bg-slate-900/60 ">
 
         <a class="font-semibold hover:-translate-y-1 duration-300  text-xl text-violet-400" href="#hero">Portfolio</a>
 

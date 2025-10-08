@@ -19,20 +19,20 @@
 </template>
 
 <script setup>
-  import { ref, onMounted } from 'vue'
+import { ref, onMounted } from 'vue'
 
-  import Header from './partials/Header.vue'
-  import Footer from './partials/Footer.vue'
-  import Landing from './pages/Landing.vue'
-  import Competence from './pages/Competence.vue'
-  import About from './pages/About.vue'
-  import Project from './pages/Project.vue'
+import Header from './partials/Header.vue'
+import Footer from './partials/Footer.vue'
+import Landing from './pages/Landing.vue'
+import Competence from './pages/Competence.vue'
+import About from './pages/About.vue'
+import Project from './pages/Project.vue'
 
-  const loading = ref(true)
+const loading = ref(true)
 
-  onMounted(() => {
-    setTimeout(() => {
-      loading.value = false
-    }, 700)
-  })
+onMounted(() => {
+  setTimeout(() => {
+    loading.value = false
+  }, 700)
+})
 </script>
