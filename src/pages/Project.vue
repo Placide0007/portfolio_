@@ -111,7 +111,7 @@
         },
         {
             title: 'Bibliothèque en ligne',
-            description: 'Application de gestion de bibliothèque permettant aux utilisateurs d\'emprunter et réserver des livres. Interface simple développée avec Vue.js, HTML et CSS.',
+            description: 'Application web de gestion de bibliothèque permettant aux utilisateurs de consulter le catalogue, emprunter et réserver des livres en ligne.Elle offre une interface claire et intuitive, développée avec Vue.js, HTML5 et CSS3, assurant une navigation fluide et une expérience utilisateur agréable sur tous types d’appareils.Le projet comprend également une section administrateur permettant de gérer les ouvrages, les utilisateurs et les réservations, tout en mettant l’accent sur la simplicité d’utilisation et la modularité du code grâce aux composants Vue.js.',
             images: [bbooks, bcategories, bemprunts, bhome, blogin, bnew_book, breservation, busers],
             techs: ['HTML', 'CSS', 'Vue.js', 'Laravel', 'Mysql', 'tailwindcss']
         },
