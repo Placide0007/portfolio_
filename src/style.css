@@ -7,8 +7,8 @@
 
 @layer base {
   body {
-    font-family: Poppins;
-    font-size: 14.5px;
+    font-family:'Poppins';
+    font-size: 14px;
     font-weight: 400;
     @apply bg-slate-950 text-white;
   }

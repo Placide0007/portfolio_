@@ -5,11 +5,11 @@
             <p class="text-center text-3xl">Mes projets</p>
         </div>
 
-        <div id="projects" class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div id="projects" class="grid grid-cols-1  gap-5">
 
             <div class="card border-slate-900 border p-3 rounded-xl" v-for="(project, index) in projects" :key="index">
                 <div class="card-header py-3">
-                    <p class="font-semibold text-xl">{{ project.title }}</p>
+                    <p class="font-semibold text-3xl mb-5">{{ project.title }}</p>
                     <p>{{ project.description }}</p>
                 </div>
 
@@ -19,7 +19,7 @@
                             <ul class="splide__list">
                                 <li class="splide__slide flex justify-center items-center"
                                     v-for="(img, idx) in project.images" :key="idx">
-                                    <img :src="img" alt="image" class="rounded max-h-64 object-contain" />
+                                    <img :src="img" alt="image" class="rounded max-h-[900px] object-fill" />
                                 </li>
                             </ul>
                         </div>
@@ -78,7 +78,19 @@
     import alogin from '../assets/agr/login.png'
     import aregister from '../assets/agr/register.png'
 
+    import dashboad_ from '../assets/stock_management/dashboard.png'
+    import products from '../assets/stock_management/products.png'
+    import suppliers from '../assets/stock_management/suppliers.png'
+    import reviews from '../assets/stock_management/reviews.png'
+    import categories from '../assets/stock_management/categories.png'
+    
     const projects = [
+        {
+            title: 'Stock management',
+            description: 'Une application de gestion de stock, réalisée avec Python et PySide6, utilisant une base de données XML pour le stockage des informations produits, fournisseurs et catégories.L’application offre un tableau de bord interactif permettant de visualiser les statistiques clés (nombre de produits, valeur totale du stock, fournisseurs, catégories) à travers des graphiques dynamiques et une interface moderne et intuitive.',
+            images: [dashboad_, products, suppliers, reviews, categories],
+            techs: ['Python','xml','PySide6','matplotlib']
+        },
         {
             title: 'E-commerce',
             description: 'Projet de gestion des composants PC permettant de suivre et organiser le matériel via une interface simple développée avec Laravel 12, HTML, CSS et JavaScript. (Pas encore responsive)',

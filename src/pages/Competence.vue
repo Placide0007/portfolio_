@@ -11,7 +11,7 @@
             <div id="programing-langage" class="border-slate-800 border rounded-lg p-5" data-aos="fade-up">
                 <p class="p-3 text-lg font-medium flex items-center gap-2">
                     <i class="fa fa-code"></i>
-                    Langages de Programmation
+                    Langages 
                 </p>
                 <div class="grid grid-cols-3 gap-10 p-5 place-content-center place-items-center">
                     <button
@@ -28,6 +28,11 @@
                         class="w-[50px] hover:-translate-y-2 duration-300 cursor-pointer flex justify-center items-center flex-col gap-1">
                         <img src="../assets/javascript.svg" alt="JavaScript" />
                         <p>JavaScript</p>
+                    </button>
+                    <button
+                        class="w-[50px] hover:-translate-y-2 duration-300 cursor-pointer flex justify-center items-center flex-col gap-1">
+                        <img src="../assets/python.svg" alt="JavaScript" />
+                        <p>Python</p>
                     </button>
                     <button
                         class="w-[50px] hover:-translate-y-2 duration-300 cursor-pointer flex justify-center items-center flex-col gap-1">
@@ -53,6 +58,11 @@
                         class="w-[50px] hover:-translate-y-2 duration-300 cursor-pointer flex justify-center items-center flex-col gap-1">
                         <img src="../assets/vue.svg" alt="VueJs" />
                         <p>VueJs</p>
+                    </button>
+                    <button
+                        class="w-[50px] hover:-translate-y-2 duration-300 cursor-pointer flex justify-center items-center flex-col gap-1">
+                        <img src="../assets/qt.svg" alt="VueJs" />
+                        <p>PySide6(Qt for Python)</p>
                     </button>
                     <button
                         class="w-[50px] hover:-translate-y-2 duration-300 cursor-pointer flex justify-center items-center flex-col gap-1">

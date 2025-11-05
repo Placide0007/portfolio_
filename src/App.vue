@@ -1,5 +1,5 @@
 <template>
-  <main id="top" class="flex min-h-screen flex-col container mx-auto">
+  <main id="top" class="flex min-h-screen flex-col">
 
     <div v-if="loading" class="flex items-center justify-center min-h-screen">
       <div class="w-10 h-10 border-4 border-blue-500 border-t-transparent rounded-full animate-spin"></div>
