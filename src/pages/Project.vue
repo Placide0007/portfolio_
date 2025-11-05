@@ -2,7 +2,7 @@
     <!-- section projet  -->
     <section id="my_projects" class="p-10">
         <div class="flex gap-3 flex-col py-10">
-            <p class="text-center text-3xl">Mes projets</p>
+            <p class="text-center underline-offset-8 underline font-bold text-4xl">Mes projets</p>
         </div>
 
         <div id="projects" class="grid grid-cols-1  gap-5">

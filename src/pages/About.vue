@@ -2,7 +2,7 @@
     <!-- apropos de moi  -->
     <section id="about" class="p-10 md:h-screen bg-gradient-to-l from-slate-900 to-slate-950 text-white">
         <div id="jumbotrons-description-container" class="flex gap-3 flex-col py-10" data-aos="fade-down">
-            <p class="text-center text-3xl font-semibold">A propos de moi</p>
+            <p class="text-center  underline underline-offset-8 font-bold text-4xl">A propos de moi</p>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-5">

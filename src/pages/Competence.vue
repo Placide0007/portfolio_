@@ -2,7 +2,7 @@
     <!-- skills section -->
     <section id="skills" class="py-10 bg-slate-900 text-white">
         <div class="flex gap-3 flex-col py-5">
-            <p class="text-center text-3xl font-semibold">Mes compétences</p>
+            <p class="text-center text-3xl  underline-offset-8 underline font-bold text-4x">Mes compétences</p>
         </div>
 
         <!-- mes competences -->
