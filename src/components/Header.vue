@@ -1,62 +1,47 @@
+
 <template>
-    <header class="flex justify-between items-center px-20 py-2 font-semibold sticky bg-white top-0 border-b border-slate-100">
-        <a href="" class="font-semibold">
+    <header class="flex justify-between items-center font-semibold px-20 py-2  sticky bg-white top-0 border-b border-slate-100">
+
+        <a href="" class="text-xl">
             Placide_dev
         </a>
 
         <nav class="flex gap-5">
-            <a href="#about">
+            <a href="#about" @click="activeLink = 'about'" :class="activeLink === 'about' ? 'border-b-2 border-black' : ''">
                 {{ t('nav.home') }}
             </a>
-
-            <a href="#skills">
+            <a href="#skills" @click="activeLink = 'skills'" :class="activeLink === 'skills' ? 'border-b-2 border-black' : ''">
                 {{ t('nav.skills') }}
             </a>
-
-            <a href="#projects">
+            <a href="#projects" @click="activeLink = 'projects'" :class="activeLink === 'projects' ? 'border-b-2 border-black' : ''">
                 {{ t('nav.projects') }}
             </a>
-
-            <a href="#footer">
+            <a href="#footer" @click="activeLink = 'footer'" :class="activeLink === 'footer' ? 'border-b-2 border-black' : ''">
                 {{ t('nav.contact') }}
             </a>
         </nav>
 
         <div class="flex items-center gap-2">
             <Icon icon="mdi:translate" width="22" />
-
-            <button
-                @click="changeLanguage('fr')"
-                :class="locale === 'fr' ? 'text-black font-bold' : 'text-gray-400'"
-                class="hover:text-black transition"
-            >
-                Fr
-            </button>
-
+            <button @click="changeLanguage('fr')" :class="locale === 'fr' ? 'text-black font-bold' : 'text-gray-400'">Fr</button>
             <span class="text-gray-300">|</span>
-
-            <button
-                @click="changeLanguage('en')"
-                :class="locale === 'en' ? 'text-black font-bold' : 'text-gray-400'"
-                class="hover:text-black transition"
-            >
-                En
-            </button>
+            <button @click="changeLanguage('en')" :class="locale === 'en' ? 'text-black font-bold' : 'text-gray-400'">En</button>
         </div>
+
     </header>
 </template>
 
 <script setup>
-import { useI18n } from 'vue-i18n'
-import { Icon, addCollection } from '@iconify/vue/offline'
-import mdi from '@iconify-json/mdi/icons.json'
+    import { ref } from 'vue'
+    import { useI18n } from 'vue-i18n'
+    import { Icon, addCollection } from '@iconify/vue/offline'
+    import mdi from '@iconify-json/mdi/icons.json'
 
-addCollection(mdi)
+    addCollection(mdi)
 
-const { t, locale } = useI18n()
+    const { t, locale } = useI18n()
+    const activeLink = ref('about')
 
-const changeLanguage = (language) => {
-    locale.value = language
-}
+    const changeLanguage = (language) => locale.value = language
 </script>
 

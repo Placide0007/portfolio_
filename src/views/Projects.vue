@@ -80,7 +80,7 @@
                             {{ selectedProject.title }}
                         </h1>
 
-                        <p class="text-gray-600 leading-7 mt-8">
+                        <p class="text-gray-600 text-sm leading-7 mt-8">
                             {{ $t(selectedProject.description) }}
                         </p>
 

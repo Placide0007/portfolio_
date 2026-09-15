@@ -78,7 +78,6 @@
 
                     <button class="flex justify-center items-center flex-col">
                         <Icon icon="logos:php" width="45" />
-                        <p class="text-sm">Php</p>
                     </button>
                 </div>
             </div>

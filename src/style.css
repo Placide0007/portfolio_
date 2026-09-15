@@ -1,13 +1,25 @@
 @import 'tailwindcss';
 
+
+@font-face {
+    font-family: 'Aptos';
+    src: url('./assets/fonts/Aptos.ttf') format('truetype');
+    font-weight: 700;
+}
+
 html {
     scroll-behavior: smooth;
 }
 
 body {
-    font-family: Aptos;
-    @apply text-slate-800  ;
+    font-family: Poppins;
+    @apply text-slate-800 ;
 }
+
+header{
+    font-family: Aptos;
+}
+
 
 button,
 h2,
@@ -17,5 +29,5 @@ a {
 }
 
 button {
-    @apply font-semibold
+    @apply font-semibold;
 }

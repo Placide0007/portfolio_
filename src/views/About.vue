@@ -1,9 +1,10 @@
 <template>
-    <div id="about" class="flex justify-center items-center p-20 bg-linear-to-br from-yellow-50 via-white to-green-100">
-        <div class="max-w-230 flex flex-col gap-3">
-            <h1 class="text-6xl font-light">{{ $t('hero.role') }}</h1>
+    <div id="about" class="flex justify-center items-center  p-20 bg-linear-to-br from-yellow-50 via-white to-green-100">
+        <div class="max-w-250 flex flex-col gap-3">
+            
+            <h1 class="text-6xl ">{{ $t('hero.role') }}</h1>
 
-            <p class="leading-7">
+            <p class="leading-7 text-sm">
                 {{ $t('hero.introduction') }}
                 <span class="font-semibold">Lazare Placide Andriatahina</span>.
                 {{ $t('hero.description') }}
