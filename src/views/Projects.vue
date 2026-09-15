@@ -2,14 +2,14 @@
     <div id="projects" class="p-20 bg-slate-50">
         <button class="p-2 rounded underline text-4xl">{{ $t('projects.title') }}</button>
 
-        <div class="mt-10">
+        <div class="mt-10 flex flex-col gap-3">
             <div
                 v-for="project in projects"
                 :key="project.id"
                 @click="openProject(project)"
-                class="group flex items-center justify-between py-7 border-b border-slate-300 cursor-pointer hover:px-5 transition-all duration-300"
+                class="group flex items-center bg-white p-3  justify-between py-5 rounded shadow-xs border-b border-slate-300 cursor-pointer hover:px-5 transition-all duration-300"
             >
-                <div class="flex items-center gap-8">
+                <div class="flex items-center gap-8 ">
                     <span class="text-sm text-gray-400">
                         {{ project.id }}
                     </span>
