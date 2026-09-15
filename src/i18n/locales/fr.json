@@ -1,0 +1,44 @@
+{
+    "nav": {
+        "home": "Accueil",
+        "about": "À propos",
+        "skills": "Compétences",
+        "projects": "Projets",
+        "contact": "Contact"
+    },
+
+    "hero": {
+        "role": "Développeur Web Full-Stack & Desktop",
+        "introduction": "Je m'appelle",
+        "description": "Je suis développeur Web Full-Stack & Desktop. Je conçois et développe des applications web modernes ainsi que des logiciels desktop, en mettant l'accent sur la simplicité, la performance et une bonne expérience utilisateur.",
+        "projects": "Mes projets",
+        "download_cv": "Télécharger mon CV"
+    },
+
+
+    "skills": {
+        "title": "Mes compétences",
+        "frameworks": "Frameworks et bibliothèques",
+        "languages": "Langages",
+        "tools": "Outils de développement et bases de données",
+        "design": "Conception et modélisation"
+    },
+
+    "projects": {
+        "title": "Mes projets",
+        "details": "Plus de détails",
+        "project": "Projet",
+        "source": "Code source",
+        "demo": "Voir la démo",
+
+        "ecommerce": "Application e-commerce développée avec Laravel.",
+        "sales": "Application de gestion des ventes permettant de gérer les produits, les commandes et les utilisateurs."
+    },
+    
+    "footer": {
+        "role": "Développeur Web & Logiciel",
+        "rights": "Tous droits réservés."
+    }
+
+}
+

@@ -1,0 +1,21 @@
+@import 'tailwindcss';
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Aptos;
+    @apply text-slate-800  ;
+}
+
+button,
+h2,
+h1,
+a {
+    font-variant: small-caps;
+}
+
+button {
+    @apply font-semibold
+}
