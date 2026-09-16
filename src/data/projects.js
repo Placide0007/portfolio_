@@ -21,6 +21,14 @@ const projects = [
         images: [dashboard, home],
         github: '#',
         demo: '#'
+    },
+    {
+        id: '03',
+        title: 'Mon Portfolio',
+        description: 'projects.portfolio',
+        images: [dashboard, home],
+        github: '#',
+        demo: '#'
     }
 ]
 

@@ -1,13 +1,13 @@
 <template>
-    <div id="projects" class="p-20 bg-slate-50">
+    <div id="projects" class="p-20 bg-slate-50 dark:bg-slate-900">
         <button class="p-2 rounded underline text-4xl">{{ $t('projects.title') }}</button>
 
-        <div class="mt-10 flex flex-col gap-3">
+        <div class="mt-10 grid grid-cols-2 gap-3">
             <div
                 v-for="project in projects"
                 :key="project.id"
                 @click="openProject(project)"
-                class="group flex items-center bg-white p-3  justify-between py-5 rounded shadow-xs border-b border-slate-300 cursor-pointer hover:px-5 transition-all duration-300"
+                class="group flex items-center bg-white dark:bg-slate-800 p-3  justify-between py-5 rounded shadow-xs border-b border-slate-300 cursor-pointer hover:px-5 transition-all duration-300"
             >
                 <div class="flex items-center gap-8 ">
                     <span class="text-sm text-gray-400">
@@ -27,7 +27,7 @@
         <!-- FULL SCREEN POPUP -->
         <Transition name="fullscreen">
 
-            <div v-if="selectedProject" class="fixed inset-0 z-999 bg-white">
+            <div v-if="selectedProject" class="fixed inset-0 z-999 bg-white dark:bg-slate-800 dark:text-gray-200">
 
                 <!-- HEADER -->
                 <header class="flex items-center justify-between px-8 md:px-16 py-6 border-b border-slate-300">
@@ -48,7 +48,7 @@
                 <!-- CONTENU -->
                 <main class="h-[calc(100vh-89px)] grid grid-cols-1 lg:grid-cols-12">
 
-                    <div class="lg:col-span-8 flex items-center justify-center p-6 md:p-12 bg-slate-50">
+                    <div class="lg:col-span-8 flex items-center justify-center p-6 md:p-12 bg-slate-50 dark:bg-slate-800">
                         <Swiper
                             :modules="[Navigation, Pagination]"
                             :navigation="true"
@@ -80,17 +80,17 @@
                             {{ selectedProject.title }}
                         </h1>
 
-                        <p class="text-gray-600 text-sm leading-7 mt-8">
+                        <p class="text-gray-600 text-sm leading-7 dark:text-gray-300 mt-8">
                             {{ $t(selectedProject.description) }}
                         </p>
 
                         <div class="flex flex-col gap-3 mt-10">
-                            <a :href="selectedProject.github" target="_blank" class="border border-black px-6 py-3 text-center hover:bg-black hover:text-white transition"
+                            <a :href="selectedProject.github" target="_blank" class="border border-black px-6 py-3 text-center dark:bg-black hover:text-white transition"
                             >
                                 {{ $t('projects.source') }}
                             </a>
 
-                            <a :href="selectedProject.demo"  target="_blank" class="bg-black text-white px-6 py-3 text-center hover:bg-gray-800 transition"
+                            <a :href="selectedProject.demo"  target="_blank" class="bg-black dark:text-slate-900 dark:bg-white text-white px-6 py-3 text-center transition"
                             >
                                 {{ $t('projects.demo') }}
                             </a>

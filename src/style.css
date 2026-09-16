@@ -1,5 +1,7 @@
 @import 'tailwindcss';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 
 @font-face {
     font-family: 'Aptos';
@@ -13,7 +15,7 @@ html {
 
 body {
     font-family: Poppins;
-    @apply text-slate-800 ;
+    @apply text-slate-800 dark:text-slate-100 dark:bg-slate-800;
 }
 
 header{

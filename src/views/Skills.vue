@@ -25,13 +25,15 @@
                         <Icon icon="logos:qt" width="35" />
                         <p class="text-sm">Pyside6</p>
                     </button>
-
+                    
                     <button class="flex justify-center items-center flex-col">
-                        <Icon icon="logos:django" width="50" />
+                        <Icon icon="logos:django-icon" width="40" />
+                        <p class="text-sm">Django</p>
                     </button>
-
+                    
                     <button class="flex justify-center items-center flex-col">
-                        <Icon icon="logos:tailwindcss" width="95" />
+                        <Icon icon="logos:tailwindcss-icon" width="40" />
+                        <p class="text-sm">TailwindCss</p>
                     </button>
 
                     <button class="flex justify-center items-center flex-col">
@@ -62,7 +64,7 @@
                     </button>
 
                     <button class="flex justify-center items-center flex-col">
-                        <Icon icon="logos:css-3" width="35" />
+                        <Icon icon="logos:css-3" width="35"  />
                         <p class="text-sm">CSS3</p>
                     </button>
 
@@ -75,9 +77,10 @@
                         <Icon icon="logos:python" width="35" />
                         <p class="text-sm">Python</p>
                     </button>
-
+                    
                     <button class="flex justify-center items-center flex-col">
                         <Icon icon="logos:php" width="45" />
+                        <p class="text-sm">PHP</p>
                     </button>
                 </div>
             </div>
@@ -93,7 +96,8 @@
 
                 <div class="grid grid-cols-3 gap-10 justify-items-start">
                     <button class="flex justify-center items-center flex-col">
-                        <Icon icon="logos:git" width="60" />
+                        <Icon icon="logos:git-icon" width="40" />
+                        <p class="text-sm">Git</p>
                     </button>
 
                     <button class="flex justify-center items-center flex-col">
