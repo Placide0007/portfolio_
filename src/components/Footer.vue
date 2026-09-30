@@ -3,9 +3,6 @@
         <div class="flex justify-between items-center">
             <div>
                 <h2 class="font-semibold text-xl">Placide_dev</h2>
-                <p class="text-sm text-gray-500 dark:text-gray-300">
-                    {{ $t('footer.role') }}
-                </p>
             </div>
 
             <div class="flex gap-5">
@@ -25,7 +22,7 @@
 
         <p class="text-xs text-gray-600 mt-8 dark:text-gray-400">
             &copy; 2026 Lazare Placide Andriatahina.
-            {{ $t('footer.rights') }}
+            {{ $t('footer.rights') }}pr
         </p>
     </footer>
 </template>

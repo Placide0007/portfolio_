@@ -1,6 +1,6 @@
 <template>
       <div id="skills" class="p-20">
-        <button class="p-2 rounded underline text-4xl">{{ $t('skills.title') }}</button>
+        <button class="rounded underline text-4xl">{{ $t('skills.title') }}</button>
 
         <div class="grid grid-cols-2 gap-5">
 

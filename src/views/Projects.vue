@@ -1,164 +1,325 @@
 <template>
-    <div id="projects" class="p-20 bg-slate-50 dark:bg-slate-900">
-        <button class="p-2 rounded underline text-4xl">{{ $t('projects.title') }}</button>
 
-        <div class="mt-10 grid grid-cols-2 gap-3">
+    <div
+        id="projects"
+        class="p-20 bg-slate-50 dark:bg-slate-900"
+    >
+
+        <!-- TITRE -->
+
+        <button class="p-2 rounded underline text-4xl">
+            {{ $t('projects.title') }}
+        </button>
+
+
+        <!-- PROJETS -->
+
+        <div class="mt-10 space-y-10 z-0">
+
             <div
                 v-for="project in projects"
                 :key="project.id"
-                @click="openProject(project)"
-                class="group flex items-center bg-white dark:bg-slate-800 p-3  justify-between py-5 rounded shadow-xs border-b border-slate-300 cursor-pointer hover:px-5 transition-all duration-300"
+                class="grid grid-cols-1 lg:grid-cols-12 z-0 bg-white dark:bg-slate-900 rounded shadow-xs border dark:border-slate-800 overflow-hidden border-slate-200"
             >
-                <div class="flex items-center gap-8 ">
-                    <span class="text-sm text-gray-400">
-                        {{ project.id }}
-                    </span>
-                    <h2 class="text-xl font-medium">
-                        {{ project.title }}
-                    </h2>
+
+                <!-- IMAGES -->
+    
+                <div
+                    class="lg:col-span-8 flex items-center justify-center p-6 md:p-12 bg-slate-50 dark:bg-slate-800"
+                >
+
+                    <Swiper
+                        :modules="[Navigation, Pagination, Autoplay]"
+                        :navigation="true"
+                        :pagination="{ clickable: true }"
+                        :autoplay="{
+                            delay: 3000,
+                            disableOnInteraction: false
+                        }"
+                        :slides-per-view="1"
+                        :loop="true"
+                        class="project-swiper"
+                    >
+
+                        <SwiperSlide
+                            v-for="(image, index) in project.images"
+                            :key="index"
+                            class="flex items-center justify-center"
+                        >
+
+                            <img
+                                :src="image"
+                                :alt="`${project.title} - Image ${index + 1}`"
+                                class="max-w-full max-h-full object-contain"
+                            />
+
+                        </SwiperSlide>
+
+                    </Swiper>
+
                 </div>
 
-                <span class="text-3xl font-bold group-hover:translate-x-1 p-1 rounded">
-                    →
-                </span>
-            </div>
-        </div>
 
-        <!-- FULL SCREEN POPUP -->
-        <Transition name="fullscreen">
+    
+                <!-- INFORMATIONS -->
+    
 
-            <div v-if="selectedProject" class="fixed inset-0 z-999 bg-white dark:bg-slate-800 dark:text-gray-200">
+                <div
+                    class="lg:col-span-4 p-8 md:p-12 flex flex-col justify-center"
+                >
 
-                <!-- HEADER -->
-                <header class="flex items-center justify-between px-8 md:px-16 py-6 border-b border-slate-300">
-                    <div class="flex items-center gap-5">
-                        <span class="text-gray-400">
-                            {{ selectedProject.id }}
-                        </span>
-                        <h2 class="text-xl font-semibold">
-                            {{ selectedProject.title }}
-                        </h2>
-                    </div>
+                    <!-- NUMERO -->
 
-                    <button @click="closeProject" class="text-4xl leading-none hover:rotate-90 transition duration-300">
-                        ×
-                    </button>
-                </header>
+                    <span
+                        class="text-sm uppercase tracking-[0.2em] text-gray-400"
+                    >
+                        {{ $t('projects.project') }} {{ project.id }}
+                    </span>
 
-                <!-- CONTENU -->
-                <main class="h-[calc(100vh-89px)] grid grid-cols-1 lg:grid-cols-12">
 
-                    <div class="lg:col-span-8 flex items-center justify-center p-6 md:p-12 bg-slate-50 dark:bg-slate-800">
-                        <Swiper
-                            :modules="[Navigation, Pagination]"
-                            :navigation="true"
-                            :pagination="{ clickable: true }"
-                            :slides-per-view="1"
-                            :loop="true"
-                            class="fullscreen-swiper"
+                    <!-- TITRE -->
+
+                    <h1
+                        class="text-4xl font-semibold mt-4 text-slate-900 dark:text-white"
+                    >
+                        {{ project.title }}
+                    </h1>
+
+
+                    <!-- DESCRIPTION -->
+
+                    <p
+                        class="text-gray-600 text-sm leading-7 dark:text-gray-300 mt-8"
+                    >
+                        {{ $t(project.description) }}
+                    </p>
+
+
+        
+                    <!-- TECHNOLOGIES -->
+        
+
+                    <div
+                        v-if="project.technologies?.length"
+                        class="mt-8"
+                    >
+
+                        <!-- TITRE -->
+
+                        <p
+                            class="text-xs uppercase tracking-[0.2em] text-gray-400 mb-4"
                         >
-                            <SwiperSlide
-                                v-for="(image, index) in selectedProject.images"
-                                :key="index"
-                                class="flex items-center justify-center"
-                            >
-                                <img :src="image" :alt="`${selectedProject.title} - Image ${index + 1}`"
-                                   \ class="max-w-full max-h-full object-contain"
-                                />
-                            </SwiperSlide>
-                        </Swiper>
-                    </div>
-
-                    <!-- INFORMATIONS -->
-                    <div class="lg:col-span-4 p-8 md:p-14 flex flex-col justify-center">
-
-                        <span class="text-sm uppercase tracking-[0.2em] text-gray-400">
-                            {{ $t('projects.project') }} {{ selectedProject.id }}
-                        </span>
-
-                        <h1 class="text-4xl md:text-5xl font-semibold mt-4">
-                            {{ selectedProject.title }}
-                        </h1>
-
-                        <p class="text-gray-600 text-sm leading-7 dark:text-gray-300 mt-8">
-                            {{ $t(selectedProject.description) }}
+                            {{ $t('projects.technologies') }}
                         </p>
 
-                        <div class="flex flex-col gap-3 mt-10">
-                            <a :href="selectedProject.github" target="_blank" class="border border-black px-6 py-3 text-center dark:bg-black hover:text-white transition"
-                            >
-                                {{ $t('projects.source') }}
-                            </a>
 
-                            <a :href="selectedProject.demo"  target="_blank" class="bg-black dark:text-slate-900 dark:bg-white text-white px-6 py-3 text-center transition"
+                        <!-- TECHNOLOGIES -->
+
+                        <div class="flex flex-wrap gap-2">
+
+                            <div
+                                v-for="technology in project.technologies"
+                                :key="technology.name"
+                                class="flex items-center gap-2 px-3 py-2 border border-slate-200 dark:border-slate-700 rounded-lg bg-slate-50 dark:bg-slate-800"
                             >
-                                {{ $t('projects.demo') }}
-                            </a>
+
+                                <Icon
+                                    :icon="technology.icon"
+                                />
+
+                                <span
+                                    class="text-xs text-slate-700 dark:text-slate-200"
+                                >
+                                    {{ technology.name }}
+                                </span>
+
+                            </div>
+
                         </div>
 
                     </div>
 
-                </main>
+
+        
+                    <!-- BOUTONS -->
+        
+
+                    <div class="flex flex-col gap-3 mt-10">
+
+                        <!-- CODE SOURCE -->
+
+                        <a
+                            :href="project.github"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="border border-black dark:border-white px-6 py-3 text-center dark:text-white hover:bg-black hover:text-white transition"
+                        >
+                            {{ $t('projects.source') }}
+                        </a>
+
+
+                        <!-- DEMO -->
+
+                        <a
+                            :href="project.demo"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="bg-black dark:text-slate-900 dark:bg-white text-white px-6 py-3 text-center hover:opacity-80 transition"
+                        >
+                            {{ $t('projects.demo') }}
+                        </a>
+
+                    </div>
+
+                </div>
 
             </div>
 
-        </Transition>
+        </div>
 
     </div>
 
 </template>
 
+
 <script setup>
 
-    import { ref } from 'vue'
-    import { Swiper, SwiperSlide } from 'swiper/vue'
-    import { Navigation, Pagination } from 'swiper/modules'
-    import 'swiper/css'
-    import 'swiper/css/navigation'
-    import 'swiper/css/pagination'
-    import projects from '../data/projects'
+// =========================
+// SWIPER
+// =========================
 
-    const selectedProject = ref(null)
+import { Swiper, SwiperSlide } from 'swiper/vue'
 
-    const openProject = (project) => selectedProject.value = project
-    const closeProject = () => selectedProject.value = null
+import {
+    Navigation,
+    Pagination,
+    Autoplay
+} from 'swiper/modules'
+
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+
+
+// =========================
+// ICONIFY
+// =========================
+
+import { Icon, addCollection } from '@iconify/vue/offline'
+
+import logos from '@iconify-json/logos/icons.json'
+import mdi from '@iconify-json/mdi/icons.json'
+
+addCollection(logos)
+addCollection(mdi)
+
+
+// =========================
+// PROJECTS
+// =========================
+
+import projects from '../data/projects'
 
 </script>
 
+
 <style>
-    .fullscreen-swiper {
-        width: 100%;
-        height: 100%;
-    }
 
-    .fullscreen-swiper img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
+/* ========================= */
+/* SWIPER */
+/* ========================= */
 
-    .fullscreen-swiper .swiper-button-next,
-    .fullscreen-swiper .swiper-button-prev {
-        width: 40px;
-        height: 40px;
-        background: white;
-        border-radius: 50%;
-        color: black;
-        padding: 10px;
-    }
+.project-swiper {
+    width: 100%;
+    height: 450px;
+}
 
-    .fullscreen-swiper .swiper-pagination-bullet-active {
-        background: black;
-    }
 
-    .fullscreen-enter-active,
-    .fullscreen-leave-active {
-        transition: opacity 0.35s ease;
-    }
+/* ========================= */
+/* IMAGES */
+/* ========================= */
 
-    .fullscreen-enter-from,
-    .fullscreen-leave-to {
-        opacity: 0;
-    }
+.project-swiper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* ========================= */
+/* NAVIGATION */
+/* ========================= */
+
+.project-swiper .swiper-button-next,
+.project-swiper .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+
+    background: white;
+    border-radius: 50%;
+
+    color: black;
+
+    padding: 10px;
+}
+
+
+/* ========================= */
+/* PAGINATION */
+/* ========================= */
+
+.project-swiper .swiper-pagination-bullet-active {
+    background: black;
+}
+
 </style>
+```
 
+### Et ton `projects.js` doit avoir cette structure
+
+```js
+{
+    id: '01',
+    title: 'E-commerce',
+    description: 'projects.ecommerce',
+
+    images: [
+        home,
+        dashboard,
+        cart,
+        orders_admin,
+        orders_view,
+        users
+    ],
+
+    technologies: [
+        {
+            name: 'Laravel',
+            icon: 'logos:laravel'
+        },
+        {
+            name: 'Vue.js',
+            icon: 'logos:vue'
+        },
+        {
+            name: 'Tailwind CSS',
+            icon: 'logos:tailwindcss-icon'
+        },
+        {
+            name: 'MySQL',
+            icon: 'logos:mysql'
+        }
+    ],
+
+    github: '#',
+    demo: '#'
+}
+```
+
+Le point important est donc :
+
+```vue
+v-for="technology in project.technologies"
+```
+
+Chaque projet peut avoir **des technologies différentes**, et elles seront automatiquement affichées avec leur icône.

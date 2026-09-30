@@ -32,7 +32,8 @@
         "demo": "View demo",
 
         "ecommerce": "E-commerce application developed with Laravel.",
-        "sales": "Sales management application for managing products, orders, and users."
+        "sales": "Collaborative platform dedicated to students of the Faculty of Science and Technology at the University of Toamasina.",
+        "view":"View Project"
     },
 
     "footer": {

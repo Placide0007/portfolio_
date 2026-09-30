@@ -14,19 +14,31 @@ html {
 }
 
 body {
-    font-family: Poppins;
-    @apply text-slate-800 dark:text-slate-100 dark:bg-slate-800;
+    font-family: Aptos;
+    @apply text-slate-900 
+            dark:text-slate-100 
+            dark:bg-slate-800;
 }
 
 header{
-    font-family: Aptos;
+    @apply flex justify-between items-center 
+            px-20 py-2 sticky top-0 bg-white dark:bg-slate-900 
+            border-b border-slate-100 dark:border-slate-700 text-sm
+}
+
+
+#about{
+    @apply flex justify-center items-center p-20
+        bg-linear-to-br from-yellow-50 via-white to-green-100
+        dark:from-slate-950 dark:via-slate-900 dark:to-slate-800
+        dark:text-white
 }
 
 
 button,
-h2,
-h1,
-a {
+h2
+
+    {
     font-variant: small-caps;
 }
 
