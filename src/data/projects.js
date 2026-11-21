@@ -14,18 +14,13 @@ import light from '../assets/portfolio/light.png'
 import dark from '../assets/portfolio/dark.png'
 import projects_ from '../assets/portfolio/projects.png'
 
-
-
-
 const projects = [
-
     {
         id: '01',
-
         title: 'E-commerce',
-
+        titleKey: 'projects.ecommerce_title',
+        category: 'website',
         description: 'projects.ecommerce',
-
         images: [
             home,
             dashboard,
@@ -34,7 +29,6 @@ const projects = [
             orders_view,
             users
         ],
-
         technologies: [
             {
                 name: 'Laravel',
@@ -49,29 +43,22 @@ const projects = [
                 icon: 'vscode-icons:file-type-sqlite'
             }
         ],
-
-        github: '#',
-
-        demo: '#'
+        github: 'https://github.com',
+        demo: '#',
+        liveType: 'website'
     },
-
-
     {
         id: '02',
-
-        title: 'FST',
-
+        title: 'FST Platform',
+        titleKey: 'projects.sales_title',
+        category: 'website',
         description: 'projects.sales',
-
-        view: 'projects.view',
-
         images: [
             home_,
             blog_,
             show_,
             about_
         ],
-
         technologies: [
             {
                 name: 'Django',
@@ -90,26 +77,21 @@ const projects = [
                 icon: 'vscode-icons:file-type-sqlite'
             }
         ],
-
-        github: '#',
-
-        demo: '#'
+        github: 'https://github.com',
+        demo: '#',
+        liveType: 'website'
     },
-
-
     {
         id: '03',
-
         title: 'Mon Portfolio',
-
+        titleKey: 'projects.portfolio_title',
+        category: 'website',
         description: 'projects.portfolio',
-
         images: [
             light,
             dark,
             projects_
         ],
-
         technologies: [
             {
                 name: 'Vue.js',
@@ -128,13 +110,40 @@ const projects = [
                 icon: 'logos:vitejs'
             }
         ],
-
-        github: '#',
-
-        demo: '#'
+        github: 'https://github.com',
+        demo: '#',
+        liveType: 'website'
+    },
+    {
+        id: '04',
+        title: 'Desktop Stock & Sales',
+        titleKey: 'projects.desktop_manager_title',
+        category: 'desktop',
+        description: 'projects.desktop_manager',
+        images: [
+            dashboard,
+            orders_admin,
+            orders_view,
+            users
+        ],
+        technologies: [
+            {
+                name: 'Python',
+                icon: 'logos:python'
+            },
+            {
+                name: 'PySide6 / Qt',
+                icon: 'logos:qt'
+            },
+            {
+                name: 'SQLite',
+                icon: 'vscode-icons:file-type-sqlite'
+            }
+        ],
+        github: 'https://github.com',
+        demo: '#',
+        liveType: 'desktop'
     }
-
 ]
 
 export default projects
-

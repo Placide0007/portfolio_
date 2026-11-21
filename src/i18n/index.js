@@ -3,9 +3,11 @@ import { createI18n } from 'vue-i18n'
 import fr from './locales/fr.json'
 import en from './locales/en.json'
 
+const savedLocale = (typeof window !== 'undefined' && localStorage.getItem('locale')) || 'fr'
+
 const i18n = createI18n({
     legacy: false,
-    locale: 'fr',
+    locale: savedLocale,
     fallbackLocale: 'fr',
 
     messages: {

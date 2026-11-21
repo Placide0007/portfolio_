@@ -4,42 +4,87 @@
         "about": "À propos",
         "skills": "Compétences",
         "projects": "Projets",
-        "contact": "Contact"
+        "contact": "Contact",
+        "menu": "Menu"
     },
 
     "hero": {
         "role": "Développeur Web Full-Stack & Desktop",
         "introduction": "Je m'appelle",
-        "description": "Je suis développeur Web Full-Stack & Desktop. Je conçois et développe des applications web modernes ainsi que des logiciels desktop, en mettant l'accent sur la simplicité, la performance et une bonne expérience utilisateur.",
+        "name": "Lazare Placide Andriatahina",
+        "description": "Je suis développeur Web Full-Stack & Desktop. Je conçois et développe des applications web modernes ainsi que des logiciels desktop, en mettant l'accent sur la simplicité, la performance et une expérience utilisateur optimale.",
         "projects": "Mes projets",
-        "download_cv": "Télécharger mon CV"
+        "download_cv": "Télécharger mon CV",
+        "github": "Profil GitHub"
     },
-
 
     "skills": {
         "title": "Mes compétences",
         "frameworks": "Frameworks et bibliothèques",
-        "languages": "Langages",
+        "languages": "Langages de programmation",
         "tools": "Outils de développement et bases de données",
         "design": "Conception et modélisation"
     },
 
     "projects": {
         "title": "Mes projets",
+        "subtitle": "Découvrez une sélection de mes réalisations web et desktop",
         "details": "Plus de détails",
         "project": "Projet",
         "source": "Code source",
-        "demo": "Voir la démo",
+        "demo": "Site Web / Démo",
+        "desktop_btn": "Application Desktop",
+        "view": "Voir le Projet",
+        "technologies": "Technologies utilisées",
+        "empty": "Aucun projet disponible dans cette catégorie pour le moment.",
+        
+        "filters": {
+            "all": "Tous",
+            "desktop": "Desktop",
+            "website": "Website",
+            "mobile": "Mobile"
+        },
 
-        "ecommerce": "Application e-commerce développée avec Laravel.",
-        "sales": "Plateforme collaborative dediee aux etudiants de la faculte des sciences et Technologie de l'Universite de Toamasina",
-        "view":"Voir le Projet"
+        "ecommerce_title": "E-commerce",
+        "ecommerce": "Application e-commerce développée avec Laravel et Tailwind CSS. Elle comprend un catalogue produits, un panier d'achats interactif, la gestion des commandes et un tableau de bord d'administration complet.",
+        
+        "sales_title": "Plateforme FST",
+        "sales": "Plateforme collaborative dédiée aux étudiants de la Faculté des Sciences et Technologie de l'Université de Toamasina, facilitant les échanges, la consultation de cours et les actualités.",
+        
+        "portfolio_title": "Mon Portfolio",
+        "portfolio": "Portfolio personnel moderne, réactif et bilingue présentant mon profil, mes compétences et mes réalisations. Conçu avec Vue.js 3, Tailwind CSS et vue-i18n.",
+
+        "desktop_manager_title": "Gestion Commerciale & Stock",
+        "desktop_manager": "Logiciel desktop de gestion des ventes, inventaire des stocks et facturation automatique développé avec Python, PySide6 (Qt) et base de données SQLite."
     },
-    
+
+    "contact": {
+        "title": "Contactez-moi",
+        "subtitle": "Vous avez un projet en tête ou souhaitez échanger ? N'hésitez pas à me contacter.",
+        "name": "Nom complet",
+        "name_placeholder": "Votre nom",
+        "email": "Adresse email",
+        "email_placeholder": "votre.email@exemple.com",
+        "subject": "Sujet",
+        "subject_placeholder": "Objet de votre message",
+        "message": "Message",
+        "message_placeholder": "Votre message...",
+        "send": "Envoyer le message",
+        "sending": "Envoi en cours...",
+        "success": "Merci ! Votre message a bien été envoyé.",
+        "info_title": "Mes coordonnées",
+        "location": "Localisation",
+        "location_value": "Madagascar",
+        "email_label": "Email direct",
+        "availability": "Disponibilité",
+        "availability_value": "Disponible pour de nouveaux projets",
+        "back_home": "Retour à l'accueil"
+    },
+
     "footer": {
-        "role": "Développeur Web & Logiciel",
-        "rights": "Tous droits réservés."
+        "role": "Développeur Web & Logiciel Desktop",
+        "rights": "Tous droits réservés.",
+        "quick_links": "Navigation rapide",
+        "contact_me": "Restons en contact"
     }
-
 }
-

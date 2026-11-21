@@ -4,41 +4,87 @@
         "about": "About",
         "skills": "Skills",
         "projects": "Projects",
-        "contact": "Contact"
+        "contact": "Contact",
+        "menu": "Menu"
     },
 
     "hero": {
         "role": "Full-Stack Web & Desktop Developer",
         "introduction": "My name is",
-        "description": "I am a Full-Stack Web & Desktop Developer. I design and develop modern web applications and desktop software, with a focus on simplicity, performance, and a great user experience.",
+        "name": "Lazare Placide Andriatahina",
+        "description": "I am a Full-Stack Web & Desktop Developer. I design and develop modern web applications and desktop software, with a focus on simplicity, performance, and an optimal user experience.",
         "projects": "My projects",
-        "download_cv": "Download my CV"
+        "download_cv": "Download my CV",
+        "github": "GitHub Profile"
     },
-
 
     "skills": {
         "title": "My Skills",
         "frameworks": "Frameworks & Libraries",
-        "languages": "Languages",
+        "languages": "Programming Languages",
         "tools": "Development Tools & Databases",
         "design": "Design & Modeling"
     },
 
     "projects": {
         "title": "My Projects",
+        "subtitle": "Explore a selection of my recent web and desktop projects",
         "details": "More details",
         "project": "Project",
         "source": "Source code",
-        "demo": "View demo",
+        "demo": "Website / Demo",
+        "desktop_btn": "Desktop App",
+        "view": "View Project",
+        "technologies": "Technologies used",
+        "empty": "No projects available in this category at the moment.",
 
-        "ecommerce": "E-commerce application developed with Laravel.",
-        "sales": "Collaborative platform dedicated to students of the Faculty of Science and Technology at the University of Toamasina.",
-        "view":"View Project"
+        "filters": {
+            "all": "All",
+            "desktop": "Desktop",
+            "website": "Website",
+            "mobile": "Mobile"
+        },
+
+        "ecommerce_title": "E-commerce",
+        "ecommerce": "Full-featured e-commerce application developed with Laravel and Tailwind CSS. It includes product catalog, dynamic cart, order management, and a complete admin dashboard.",
+
+        "sales_title": "FST Platform",
+        "sales": "Collaborative platform dedicated to students of the Faculty of Science and Technology at the University of Toamasina, facilitating discussions, course access, and news updates.",
+
+        "portfolio_title": "My Portfolio",
+        "portfolio": "Modern, responsive, and bilingual personal portfolio showcasing my profile, technical skills, and achievements. Built with Vue.js 3, Tailwind CSS, and vue-i18n.",
+
+        "desktop_manager_title": "Stock & Sales Management",
+        "desktop_manager": "Desktop software for sales management, inventory tracking, and automated invoicing developed with Python, PySide6 (Qt), and SQLite database."
+    },
+
+    "contact": {
+        "title": "Contact Me",
+        "subtitle": "Have a project in mind or want to collaborate? Feel free to reach out.",
+        "name": "Full Name",
+        "name_placeholder": "Your name",
+        "email": "Email Address",
+        "email_placeholder": "your.email@example.com",
+        "subject": "Subject",
+        "subject_placeholder": "Message subject",
+        "message": "Message",
+        "message_placeholder": "Your message...",
+        "send": "Send Message",
+        "sending": "Sending...",
+        "success": "Thank you! Your message has been sent successfully.",
+        "info_title": "Contact Info",
+        "location": "Location",
+        "location_value": "Madagascar",
+        "email_label": "Direct Email",
+        "availability": "Availability",
+        "availability_value": "Available for new projects",
+        "back_home": "Back to Home"
     },
 
     "footer": {
-        "role": "Web & Software Developer",
-        "rights": "All rights reserved."
+        "role": "Web & Desktop Software Developer",
+        "rights": "All rights reserved.",
+        "quick_links": "Quick Links",
+        "contact_me": "Let's stay connected"
     }
-
 }

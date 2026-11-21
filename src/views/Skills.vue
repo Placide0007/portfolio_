@@ -1,161 +1,156 @@
 <template>
-      <div id="skills" class="p-20">
-        <button class="rounded underline text-4xl">{{ $t('skills.title') }}</button>
+    <div id="skills" class="px-4 py-12 sm:px-8 sm:py-16 md:px-12 md:py-20 lg:p-20 max-w-7xl mx-auto">
+        <div class="mb-10 text-left">
+            <h2 class="inline-block text-3xl sm:text-4xl font-bold underline decoration-slate-300 dark:decoration-slate-600 underline-offset-8">
+                {{ $t('skills.title') }}
+            </h2>
+        </div>
 
-        <div class="grid grid-cols-2 gap-5">
-
-            <div class="py-5">
-
-                <h2 class="my-5 font-semibold text-xl text-left underline border-slate-200">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
+            <!-- Frameworks & Bibliothèques -->
+            <div class="py-2">
+                <h3 class="my-4 font-semibold text-lg sm:text-xl text-left underline border-slate-200 dark:border-slate-700 decoration-slate-300">
                     {{ $t('skills.frameworks') }}
-                </h2>
+                </h3>
 
-                <div class="grid grid-cols-3 gap-10 justify-items-start">
-                    <button class="flex justify-center items-center flex-col">
+                <div class="grid grid-cols-3 gap-6 sm:gap-8 justify-items-start">
+                    <div class="flex flex-col items-center justify-center gap-2 hover:scale-105 transition-transform duration-200">
                         <Icon icon="logos:laravel" width="35" />
-                        <p class="text-sm">Laravel</p>
-                    </button>
+                        <p class="text-xs sm:text-sm font-medium">Laravel</p>
+                    </div>
 
-                    <button class="flex justify-center items-center flex-col">
+                    <div class="flex flex-col items-center justify-center gap-2 hover:scale-105 transition-transform duration-200">
                         <Icon icon="logos:vue" width="35" />
-                        <p class="text-sm">Vuejs</p>
-                    </button>
+                        <p class="text-xs sm:text-sm font-medium">Vue.js</p>
+                    </div>
 
-                    <button class="flex justify-center items-center flex-col">
+                    <div class="flex flex-col items-center justify-center gap-2 hover:scale-105 transition-transform duration-200">
                         <Icon icon="logos:qt" width="35" />
-                        <p class="text-sm">Pyside6</p>
-                    </button>
+                        <p class="text-xs sm:text-sm font-medium">PySide6</p>
+                    </div>
                     
-                    <button class="flex justify-center items-center flex-col">
-                        <Icon icon="logos:django-icon" width="40" />
-                        <p class="text-sm">Django</p>
-                    </button>
+                    <div class="flex flex-col items-center justify-center gap-2 hover:scale-105 transition-transform duration-200">
+                        <Icon icon="logos:django-icon" width="35" />
+                        <p class="text-xs sm:text-sm font-medium">Django</p>
+                    </div>
                     
-                    <button class="flex justify-center items-center flex-col">
-                        <Icon icon="logos:tailwindcss-icon" width="40" />
-                        <p class="text-sm">TailwindCss</p>
-                    </button>
+                    <div class="flex flex-col items-center justify-center gap-2 hover:scale-105 transition-transform duration-200">
+                        <Icon icon="logos:tailwindcss-icon" width="35" />
+                        <p class="text-xs sm:text-sm font-medium">Tailwind CSS</p>
+                    </div>
 
-                    <button class="flex justify-center items-center flex-col">
+                    <div class="flex flex-col items-center justify-center gap-2 hover:scale-105 transition-transform duration-200">
                         <Icon icon="logos:react" width="35" />
-                        <p class="text-sm">React</p>
-                    </button>
+                        <p class="text-xs sm:text-sm font-medium">React</p>
+                    </div>
 
-                    <button class="flex justify-center items-center flex-col">
+                    <div class="flex flex-col items-center justify-center gap-2 hover:scale-105 transition-transform duration-200">
                         <Icon icon="logos:bootstrap" width="35" />
-                        <p class="text-sm">Bootstrap</p>
-                    </button>
+                        <p class="text-xs sm:text-sm font-medium">Bootstrap</p>
+                    </div>
                 </div>
             </div>
 
-
-            <!-- langages de programmation -->
-
-            <div class="py-5">
-
-                <h2 class="my-5 font-semibold text-xl text-right underline border-slate-200">
+            <!-- Langages de programmation -->
+            <div class="py-2">
+                <h3 class="my-4 font-semibold text-lg sm:text-xl text-left md:text-right underline border-slate-200 dark:border-slate-700 decoration-slate-300">
                     {{ $t('skills.languages') }}
-                </h2>
+                </h3>
 
-                <div class="grid grid-cols-3 gap-10 justify-items-end">
-                    <button class="flex justify-center items-center flex-col">
+                <div class="grid grid-cols-3 gap-6 sm:gap-8 justify-items-start md:justify-items-end">
+                    <div class="flex flex-col items-center justify-center gap-2 hover:scale-105 transition-transform duration-200">
                         <Icon icon="logos:html-5" width="35" />
-                        <p class="text-sm">HTML</p>
-                    </button>
+                        <p class="text-xs sm:text-sm font-medium">HTML5</p>
+                    </div>
 
-                    <button class="flex justify-center items-center flex-col">
-                        <Icon icon="logos:css-3" width="35"  />
-                        <p class="text-sm">CSS3</p>
-                    </button>
+                    <div class="flex flex-col items-center justify-center gap-2 hover:scale-105 transition-transform duration-200">
+                        <Icon icon="logos:css-3" width="35" />
+                        <p class="text-xs sm:text-sm font-medium">CSS3</p>
+                    </div>
 
-                    <button class="flex justify-center items-center flex-col">
+                    <div class="flex flex-col items-center justify-center gap-2 hover:scale-105 transition-transform duration-200">
                         <Icon icon="logos:javascript" width="35" />
-                        <p class="text-sm">javascript</p>
-                    </button>
+                        <p class="text-xs sm:text-sm font-medium">JavaScript</p>
+                    </div>
 
-                    <button class="flex justify-center items-center flex-col">
+                    <div class="flex flex-col items-center justify-center gap-2 hover:scale-105 transition-transform duration-200">
                         <Icon icon="logos:python" width="35" />
-                        <p class="text-sm">Python</p>
-                    </button>
+                        <p class="text-xs sm:text-sm font-medium">Python</p>
+                    </div>
                     
-                    <button class="flex justify-center items-center flex-col">
-                        <Icon icon="logos:php" width="45" />
-                        <p class="text-sm">PHP</p>
-                    </button>
+                    <div class="flex flex-col items-center justify-center gap-2 hover:scale-105 transition-transform duration-200">
+                        <Icon icon="logos:php" width="40" />
+                        <p class="text-xs sm:text-sm font-medium">PHP</p>
+                    </div>
                 </div>
             </div>
 
-
-            <!-- outils de developpment et base de donnee -->
-
-            <div class="py-5">
-
-                <h2 class="my-5 font-semibold text-xl text-left underline border-slate-200">
+            <!-- Outils de développement & base de données -->
+            <div class="py-2">
+                <h3 class="my-4 font-semibold text-lg sm:text-xl text-left underline border-slate-200 dark:border-slate-700 decoration-slate-300">
                     {{ $t('skills.tools') }}
-                </h2>
+                </h3>
 
-                <div class="grid grid-cols-3 gap-10 justify-items-start">
-                    <button class="flex justify-center items-center flex-col">
-                        <Icon icon="logos:git-icon" width="40" />
-                        <p class="text-sm">Git</p>
-                    </button>
+                <div class="grid grid-cols-3 gap-6 sm:gap-8 justify-items-start">
+                    <div class="flex flex-col items-center justify-center gap-2 hover:scale-105 transition-transform duration-200">
+                        <Icon icon="logos:git-icon" width="35" />
+                        <p class="text-xs sm:text-sm font-medium">Git</p>
+                    </div>
 
-                    <button class="flex justify-center items-center flex-col">
-                        <Icon icon="logos:mysql" width="60" />
-                        <p class="text-sm"></p>
-                    </button>
+                    <div class="flex flex-col items-center justify-center gap-2 hover:scale-105 transition-transform duration-200">
+                        <Icon icon="logos:mysql" width="45" />
+                        <p class="text-xs sm:text-sm font-medium">MySQL</p>
+                    </div>
 
-                    <button class="flex justify-center items-center flex-col">
+                    <div class="flex flex-col items-center justify-center gap-2 hover:scale-105 transition-transform duration-200">
                         <Icon icon="logos:github-icon" width="35" />
-                        <p class="text-sm">GitHub</p>
-                    </button>
+                        <p class="text-xs sm:text-sm font-medium">GitHub</p>
+                    </div>
 
-                    <button class="flex justify-center items-center flex-col">
+                    <div class="flex flex-col items-center justify-center gap-2 hover:scale-105 transition-transform duration-200">
                         <Icon icon="logos:visual-studio-code" width="35" />
-                        <p class="text-sm">VSCode</p>
-                    </button>
+                        <p class="text-xs sm:text-sm font-medium">VS Code</p>
+                    </div>
 
-                    <button class="flex justify-center items-center flex-col">
+                    <div class="flex flex-col items-center justify-center gap-2 hover:scale-105 transition-transform duration-200">
                         <Icon icon="logos:insomnia" width="35" />
-                        <p class="text-sm">insomnia</p>
-                    </button>
+                        <p class="text-xs sm:text-sm font-medium">Insomnia</p>
+                    </div>
                 </div>
             </div>
 
-
-            <!-- conception et modelisation -->
-
-            <div class="py-5">
-
-                <h2 class="my-5 font-semibold text-xl text-right underline border-slate-200">
+            <!-- Conception & modélisation -->
+            <div class="py-2">
+                <h3 class="my-4 font-semibold text-lg sm:text-xl text-left md:text-right underline border-slate-200 dark:border-slate-700 decoration-slate-300">
                     {{ $t('skills.design') }}
-                </h2>
+                </h3>
 
-                <div class="grid grid-cols-3 justify-items-end">
-                    <button class="flex flex-col items-center gap-2">
-                        <Icon icon="mdi:sitemap-outline" width="35" />
-                        <p class="text-sm">UML</p>
-                    </button>
+                <div class="grid grid-cols-3 gap-6 sm:gap-8 justify-items-start md:justify-items-end">
+                    <div class="flex flex-col items-center justify-center gap-2 hover:scale-105 transition-transform duration-200">
+                        <Icon icon="mdi:sitemap-outline" width="35" class="text-slate-800 dark:text-slate-200" />
+                        <p class="text-xs sm:text-sm font-medium">UML</p>
+                    </div>
 
-                    <button class="flex flex-col items-center gap-2">
-                        <Icon icon="mdi:database-cog-outline" width="35" />
-                        <p class="text-sm">MERISE</p>
-                    </button>
+                    <div class="flex flex-col items-center justify-center gap-2 hover:scale-105 transition-transform duration-200">
+                        <Icon icon="mdi:database-cog-outline" width="35" class="text-slate-800 dark:text-slate-200" />
+                        <p class="text-xs sm:text-sm font-medium">MERISE</p>
+                    </div>
 
-                    <button class="flex flex-col items-center gap-2">
-                        <Icon icon="mdi:vector-square" width="35" />
-                        <p class="text-sm">Visual Paradigm</p>
-                    </button>
+                    <div class="flex flex-col items-center justify-center gap-2 hover:scale-105 transition-transform duration-200">
+                        <Icon icon="mdi:vector-square" width="35" class="text-slate-800 dark:text-slate-200" />
+                        <p class="text-xs sm:text-sm font-medium text-center">Visual Paradigm</p>
+                    </div>
                 </div>
             </div>
-
         </div>
     </div>
 </template>
-<script setup >
-    import { Icon, addCollection } from '@iconify/vue/offline'
-    import logos from '@iconify-json/logos/icons.json'
-    import mdi from '@iconify-json/mdi/icons.json'
-    addCollection(logos)
-    addCollection(mdi)
+
+<script setup>
+import { Icon, addCollection } from '@iconify/vue/offline'
+import logos from '@iconify-json/logos/icons.json'
+import mdi from '@iconify-json/mdi/icons.json'
+
+addCollection(logos)
+addCollection(mdi)
 </script>
