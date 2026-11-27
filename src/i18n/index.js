@@ -5,7 +5,7 @@ import en from './locales/en.json'
 
 const savedLocale = (typeof window !== 'undefined' && localStorage.getItem('locale')) || 'fr'
 
-const i18n = createI18n({
+const i18n = createI18n({   
     legacy: false,
     locale: savedLocale,
     fallbackLocale: 'fr',

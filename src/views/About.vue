@@ -10,7 +10,7 @@
                 <span class="font-semibold text-slate-900 dark:text-white">
                     {{ $t('hero.name') }}
                 </span>.
-                {{ $t('hero.description') }}
+                <span class="text-sm" >{{ $t('hero.description') }}</span>
             </p>
 
             <div class="flex flex-wrap items-center gap-4 sm:gap-6 pt-3">
